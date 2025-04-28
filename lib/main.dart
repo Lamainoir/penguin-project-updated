@@ -16,6 +16,9 @@ import 'config.dart';
 import '../screens/merchant_dashboard_screen.dart';
 import 'package:money_transfer/screens/merchant_login_screen.dart'; // Import MerchantLoginScreen
 import 'package:money_transfer/screens/merchant_transfer_screen.dart'; // Add this import
+import 'screens/user_dashboard_screen.dart';
+import 'screens/send_money_screen.dart';
+import 'screens/transaction_history_screen.dart';
 
 void main() {
   runApp(const MyMobileMoneyApp());
@@ -27,7 +30,7 @@ class MyMobileMoneyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Mobile Money App',
+      title: 'Penguin Project',
       theme: ThemeData(primarySwatch: Colors.blue),
       initialRoute: '/',
       routes: {
@@ -135,6 +138,9 @@ class MyMobileMoneyApp extends StatelessWidget {
             fromQR: args['fromQR'] ?? false,
           );
         },
+        '/user_dashboard': (context) => UserDashboardScreen(),
+        '/send_money': (context) => SendMoneyScreen(),
+        '/transaction_history': (context) => TransactionHistoryScreen(),
       },
       onGenerateRoute: (settings) {
         if (settings.name == '/dashboard') {

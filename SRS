@@ -1,50 +1,76 @@
 I. REQUIREMENTS ANALYSIS AND SPECIFICATION
 
-1.  What is the problem?
+1. What is the problem?
+The problem is the lack of a unified platform for managing mobile money transactions, including user accounts, agent accounts, and administrative tasks, across multiple platforms (mobile, web, and desktop).
 
-2.  Why is it important to solve the problem?
+2. Why is it important to solve the problem?
+Solving this problem will streamline financial transactions, improve user experience, and enhance operational efficiency for administrators, agents, and users. It will also ensure secure and reliable access to financial services.
 
-3.  What are the possible solutions to the problem?
+3. What are the possible solutions to the problem?
+- Develop a cross-platform mobile application for iOS and Android.
+- Create a web application for browser-based access.
+- Build a desktop application for Windows, macOS, and Linux.
 
-4.  What exactly are the data input to the system and what exactly are the data output by the system?
+4. What exactly are the data input to the system and what exactly are the data output by the system?
+- Input: User credentials, transaction details, RDV form data, account creation details, and administrative commands.
+- Output: User dashboards, transaction history, RDV lists, account details, and system notifications.
 
-5.  What are the likely complexities that might arise while solving the problem?
+5. What are the likely complexities that might arise while solving the problem?
+- Ensuring data synchronization across platforms.
+- Maintaining security and privacy of user data.
+- Handling high volumes of concurrent transactions.
+- Integrating with external payment gateways and APIs.
 
-6.  If there are external software or hardware with which the developed software has to interface, then what exactly would the data interchange formats with the external system be?
+6. If there are external software or hardware with which the developed software has to interface, then what exactly would the data interchange formats with the external system be?
+- JSON and XML for API communication.
+- Secure protocols like HTTPS for data transmission.
+- Integration with external payment gateways and QR code scanners.
 
 II. SOFTWARE REQUIREMENT SPECIFICATIONS
 
 1. Functional requirements
+- Create default admin account with username: admin, and password: admin.
+- Create Manager Account.
+- Create agent account.
+- Create a new RDV form.
+- Display manager list.
+- Display agent list.
+- Display RDV list.
+- Delete RDV.
+- Delete team.
+- Log in.
+- Log out.
+- Process mobile money transactions.
+- Generate QR codes for transactions.
+- Scan QR codes for payments.
 
-1. Create default admin account with username: admin, and password: admin
-1. Create Manager Account
-1. Create agent account
-1. Create a new RDV form
-1. Display manager list
-1. Display agent list
-1. Display rdv list
-1. Delete rdv
-1. Delete team
-1. Log in
-1. Log out
-
-1. Non-functional requirements of the system: complete the list
-
+2. Non-functional requirements of the system
 2.1. For mobile app solution
-
-Example: the mobile app should be available for iOS and Android
+- The mobile app should be available for iOS and Android.
+- The app should have a user-friendly interface and support offline mode for basic functionalities.
 
 2.2. For web app solution
+- The web app should be responsive and accessible on all major browsers.
+- It should support real-time updates and notifications.
 
 2.3. For desktop app solution
+- The desktop app should be compatible with Windows, macOS, and Linux.
+- It should provide a seamless experience similar to the mobile and web apps.
 
 3. Context Diagram
+- A high-level diagram showing interactions between users (admin, manager, agent, and customer) and the system.
 
-4. Data Flow diagram for all possible levels
+4. Data Flow Diagram for all possible levels
+- Level 0: Overview of the system.
+- Level 1: Detailed flow of user interactions, transactions, and administrative tasks.
 
 5. Entity Relationship Diagram
+- Diagram showing relationships between entities like Users, Accounts, Transactions, and RDVs.
 
 6. Data Dictionaries
+- Definitions and formats for all data fields used in the system, such as user credentials, transaction details, and RDV data.
 
-7. Goals of implementation: complete the list
-   Example: - Sanovia might want to develop a mobile version of the system in maybe 2 years.
+7. Goals of implementation
+- Provide a secure and efficient platform for mobile money transactions.
+- Ensure cross-platform compatibility.
+- Enable scalability for future enhancements, such as adding new features or integrating with additional payment gateways.
